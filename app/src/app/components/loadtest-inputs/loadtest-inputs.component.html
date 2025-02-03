@@ -1,4 +1,4 @@
-<p>loadtest-inputs works!</p>
+<h2 class="display-4">Run a Load Test !!</h2>
 <form>
     <div class="row">
         <div class="col-md-3 d-grid gap=2">
@@ -18,7 +18,13 @@
             <button type="submit" class="btn" (click)="runLoadTestAPI()">Submit</button>
           </div>
     </div>
+    <div class="mb-3">      
+        <br/>  
+        <ngx-json-viewer class="form-control"  [json]="data" [expanded]="false" [depth]="4"></ngx-json-viewer>
+    </div>
   </form>
+
+  
   
   
   

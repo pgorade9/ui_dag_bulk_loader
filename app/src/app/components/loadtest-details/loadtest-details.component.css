@@ -1,0 +1,11 @@
+.btn {
+        background-color: rgb(233, 154, 51);
+        color: white;
+    }
+
+.display-4 {
+        text-align: left;
+        font-family :Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 5px #ecc826, 5px 0 10px #80e0e7;
+    }
