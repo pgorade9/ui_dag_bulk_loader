@@ -4,11 +4,28 @@
         <div class="row">
             <div class="col-3">
                 <div class="row"><label for="env" class="form-label">Environment</label></div>
-                <div class="row"><input type="text" [(ngModel)]="env" name="env" class="form-control" placeholder="Environment"></div>
+                <!-- <div class="row"><input type="text" [(ngModel)]="env" name="env" class="form-control" placeholder="Environment"></div> -->
+                <div class="row">
+                    <select class="form-select" [(ngModel)] ="env" name="env" aria-label="Environment">
+                        <option value="evd-ltops">EVD</option>
+                        <option value="evt-ltops">EVT</option>
+                        <option value="prod-canary-ltops">Prod-Canary</option>
+                        <option value="prod-aws-ltops">Prod-AWS</option>
+                        <option value="prod-qanoc-ltops">Prod-QANOC</option>
+                    </select>
+                </div>
             </div>
             <div class="col-3">
                 <div class="row"><label for="dag" class="form-label">DAG Name</label></div>
-                <div class="row"><input type="text" [(ngModel)]="dag" name="dag" class="form-control" placeholder="DAG Name"></div>
+                <!-- <div class="row"><input type="text" [(ngModel)]="dag" name="dag" class="form-control" placeholder="DAG Name"></div> -->
+                <div class="row">
+                    <select class="form-select" [(ngModel)] ="dag" name="dag" aria-label="DAG Name">
+                        <option value="csv_parser_wf_status_gsm">csv_parser_wf_status_gsm</option>
+                        <option value="wellbore_ingestion_wf_gsm">wellbore_ingestion_wf_gsm</option>
+                        <option value="doc_ingestor_azure_ocr_wf">doc_ingestor_azure_ocr_wf</option>
+                        <option value="prod-qanoc-ltops">shapefile_ingestor_wf_status_gsm</option>
+                    </select>
+                </div>
             </div>
             <div class="col-3">
                 <div class="row"><label for="count" class="form-label">Load Size</label></div>

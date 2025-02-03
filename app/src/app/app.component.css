@@ -1,7 +1,7 @@
 
 .display-3 {
     text-align: left;
-    font-family :Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family :Georgia, 'Times New Roman', Times, serif;
     color: rgb(255, 255, 255);
     text-shadow: 0 0 3px #ecc826, 5px 0 10px #a1ca40;
     
@@ -47,7 +47,7 @@ label {
 ngx-json-viewer.form-control {
     width: 100%;
     min-height: 100px;
-    max-height: 100px; /* Use max-height for flexibility */
+    max-height: 350px; /* Use max-height for flexibility */
     overflow-y: auto; /* Enable vertical scrolling */
     overflow-x: hidden; /* Avoid horizontal scrolling */
     border: 1px solid #ced4da;

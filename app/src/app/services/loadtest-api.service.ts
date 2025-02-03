@@ -43,4 +43,8 @@ export class LoadtestApiService {
     this.dataSubject3.next(response)});
     return this.data3$;
   }
+
+  downloadTest(test_id:string) {
+    return this.httpClient.get<any>(`http://127.0.0.1:8081/export-excel/${test_id}`,{ responseType: 'blob' as 'json' })
+  }
 }
