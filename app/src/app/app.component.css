@@ -1,0 +1,14 @@
+
+.display-3 {
+    text-align: left;
+    font-family :Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 5px #c23bdd, 5px 0 10px #80e0e7;
+    
+    }
+
+.row{
+    box-shadow: 5px 5px 5px 5px rgb(73, 133, 188);
+    margin-bottom: 25px;
+    background: rgb(152, 184, 219);
+}

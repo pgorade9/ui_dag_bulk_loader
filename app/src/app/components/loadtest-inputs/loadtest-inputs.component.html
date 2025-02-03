@@ -1,0 +1,24 @@
+<p>loadtest-inputs works!</p>
+<form>
+    <div class="row">
+        <div class="col-md-3 d-grid gap=2">
+            <label for="env" class="form-label"></label>
+            <input type="text" [(ngModel)]="env" name="env" class="form-control" placeholder="Environment">
+        </div>
+        <div class="col-md-3 d-grid gap=2">
+            <label for="dag" class="form-label"></label>
+            <input type="text" [(ngModel)]="dag" name="dag" class="form-control" placeholder="DAG Name">
+        </div>
+        <div class="col-md-3 d-grid gap=2">
+            <label for="count" class="form-label"></label>
+            <input type="text" [(ngModel)]="count" name="count" class="form-control" placeholder="Count">
+        </div>
+        <div class="col-md-3 d-grid gap=2">
+            <label class="form-label">&nbsp;</label>
+            <button type="submit" class="btn" (click)="runLoadTestAPI()">Submit</button>
+          </div>
+    </div>
+  </form>
+  
+  
+  
