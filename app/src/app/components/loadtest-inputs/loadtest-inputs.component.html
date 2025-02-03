@@ -1,29 +1,31 @@
-<h2 class="display-4">Run a Load Test !!</h2>
-<form>
-    <div class="row">
-        <div class="col-md-3 d-grid gap=2">
-            <label for="env" class="form-label"></label>
-            <input type="text" [(ngModel)]="env" name="env" class="form-control" placeholder="Environment">
+<div class="element row">
+   <h2 class="sub-titles">Run a Load Test !!</h2>
+    <form>
+        <div class="row">
+            <div class="col-3">
+                <div class="row"><label for="env" class="form-label">Environment</label></div>
+                <div class="row"><input type="text" [(ngModel)]="env" name="env" class="form-control" placeholder="Environment"></div>
+            </div>
+            <div class="col-3">
+                <div class="row"><label for="dag" class="form-label">DAG Name</label></div>
+                <div class="row"><input type="text" [(ngModel)]="dag" name="dag" class="form-control" placeholder="DAG Name"></div>
+            </div>
+            <div class="col-3">
+                <div class="row"><label for="count" class="form-label">Load Size</label></div>
+                <div class="row"><input type="text" [(ngModel)]="count" name="count" class="form-control" placeholder="Count"></div>
+            </div>
+            <div class="col-3">
+                <div class="row"><label class="form-label">Trigger</label></div>
+                <div class="row"><button type="submit" class="btn" (click)="runLoadTestAPI()">Submit</button></div>
+            </div>  
         </div>
-        <div class="col-md-3 d-grid gap=2">
-            <label for="dag" class="form-label"></label>
-            <input type="text" [(ngModel)]="dag" name="dag" class="form-control" placeholder="DAG Name">
+        <div class="row"> 
+            <div class="col">
+                <div class="row"><ngx-json-viewer class="form-control"  [json]="data" [expanded]="false" [depth]="4" placeholder="Test API Response"></ngx-json-viewer></div>
+            </div>
         </div>
-        <div class="col-md-3 d-grid gap=2">
-            <label for="count" class="form-label"></label>
-            <input type="text" [(ngModel)]="count" name="count" class="form-control" placeholder="Count">
-        </div>
-        <div class="col-md-3 d-grid gap=2">
-            <label class="form-label">&nbsp;</label>
-            <button type="submit" class="btn" (click)="runLoadTestAPI()">Submit</button>
-          </div>
-    </div>
-    <div class="mb-3">      
-        <br/>  
-        <ngx-json-viewer class="form-control"  [json]="data" [expanded]="false" [depth]="4"></ngx-json-viewer>
-    </div>
-  </form>
-
+    </form>
+</div>
   
   
   

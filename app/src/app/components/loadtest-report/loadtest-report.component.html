@@ -1,18 +1,21 @@
-<h2>View Load Test Summary</h2>
-<form>
-    <div class="row">
-        <div class="col-md-3 d-grid gap=2">
-            <label for="env" class="form-label"></label>
-            <input type="text" [(ngModel)]="test_id" name="test_id" class="form-control" placeholder="Environment">
+<div class="element row">
+    <h3 class="sub-titles" >View Load Test Summary</h3>
+    <form>
+        <div class="row">
+            <div class="col-6">
+                <div class="row"><label for="env" class="form-label">Test Id</label></div>
+                <div class="row"><input type="text" [(ngModel)]="test_id" name="test_id" class="form-control" placeholder="Test Id"></div>
+            </div>
+            
+            <div class="col-6">
+                <div class="row"><label class="form-label">Fetch Test Details</label></div>
+                <div class="row"><button type="submit" class="btn" (click)="getTestReport()">Submit</button></div>
+            </div>
         </div>
-        
-        <div class="col-md-3 d-grid gap=2">
-            <label class="form-label">&nbsp;</label>
-            <button type="submit" class="btn" (click)="getTestReport()">Submit</button>
-          </div>
-    </div>
-    <div class="mb-3">      
-        <br/>  
-        <ngx-json-viewer class="form-control"  [json]="data" [expanded]="false" [depth]="4"></ngx-json-viewer>
-    </div>
-</form>
+        <div class="row">  
+            <div class="col">
+                <div class="row"><ngx-json-viewer class="form-control"  [json]="data" [expanded]="false" [depth]="4"></ngx-json-viewer></div>
+            </div>
+        </div>
+    </form>
+</div>

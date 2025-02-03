@@ -8,7 +8,7 @@ import { LoadtestApiService } from '../../services/loadtest-api.service';
   standalone: true,
   imports: [FormsModule,NgxJsonViewerModule],
   templateUrl: './loadtest-details.component.html',
-  styleUrl: './loadtest-details.component.css'
+  styleUrl: '../../app.component.css'
 })
 export class LoadtestDetailsComponent {
 getTestDetails() {

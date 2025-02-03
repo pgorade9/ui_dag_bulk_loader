@@ -8,7 +8,7 @@ import { NgxJsonViewerModule } from 'ngx-json-viewer';
   standalone: true,
   imports: [FormsModule,NgxJsonViewerModule],
   templateUrl: './loadtest-report.component.html',
-  styleUrl: './loadtest-report.component.css'
+  styleUrl: '../../app.component.css'
 })
 export class LoadtestReportComponent {
   getTestReport() {

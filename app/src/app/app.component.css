@@ -3,14 +3,56 @@
     text-align: left;
     font-family :Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: rgb(255, 255, 255);
-    text-shadow: 0 0 5px #ecc826, 5px 0 10px #80e0e7;
+    text-shadow: 0 0 3px #ecc826, 5px 0 10px #a1ca40;
     
     }
 
-.row{
+.sub-titles {
+    text-align: left;
+    font-family :Impact, Haettenschweiler, 'Arial Bold', sans-serif;
+    color: rgb(236, 222, 222);
+    text-shadow: 0 0 1px #ecc826, 5px 0 10px #a1ca40;
+}
+
+label {
+    color: rgb(9, 64, 68);
+    font-family :Impact, Haettenschweiler, 'Arial Bold', sans-serif;
+    font-size: large;
+}
+
+.element {
     margin-top: 25px;
     padding: 5px;
     box-shadow: 5px 5px 5px 5px rgb(41, 36, 36);
     margin-bottom: 25px;
     background: rgb(134, 127, 56);
 }
+
+.output-element {
+    padding: 10px;
+}
+
+
+.row {
+    padding: 5px;
+}
+
+.btn {
+    background-color: rgb(233, 154, 51);
+    color: white;
+}
+
+
+
+ngx-json-viewer.form-control {
+    width: 100%;
+    min-height: 100px;
+    max-height: 100px; /* Use max-height for flexibility */
+    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-x: hidden; /* Avoid horizontal scrolling */
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    box-sizing: border-box;
+  }

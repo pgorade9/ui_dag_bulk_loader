@@ -10,7 +10,7 @@ import { NgxJsonViewerModule } from 'ngx-json-viewer';
   standalone: true,
   imports: [HttpClientModule,CommonModule,FormsModule, NgxJsonViewerModule],
   templateUrl: './loadtest-inputs.component.html',
-  styleUrl: './loadtest-inputs.component.css'
+  styleUrl: '../../app.component.css'
 })
 export class LoadtestInputsComponent {
 
