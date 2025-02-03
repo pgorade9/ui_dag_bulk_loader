@@ -14,14 +14,19 @@ import { NgxJsonViewerModule } from 'ngx-json-viewer';
 })
 export class LoadtestInputsComponent {
 
-  data:any
+  data: any = { key: 'value' };
+  isLoading = false;
+  
   constructor(private loadTestService:LoadtestApiService){}
   runLoadTestAPI() {
-    this.loadTestService.runLoadTest(this.env, this.dag, this.count).subscribe(response => {
-      console.log("API Response:", response);
+    this.isLoading = true;
+    this.loadTestService.runLoadTest(this.env, this.dag, this.count).subscribe(response=>{
+      this.data=response;
+      
+      if (this.data !== null && this.data !== undefined) {
+        this.isLoading = false;
+      }
     });
-    this.loadTestService.data$.subscribe((response: any) => {this.data = response;});
-    console.log("data = ",this.data);
   }
   env: string='evt-ltops';
   dag: string='csv_parser_wf_status_gsm';

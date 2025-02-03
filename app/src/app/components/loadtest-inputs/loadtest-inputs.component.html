@@ -36,6 +36,17 @@
                 <div class="row"><button type="submit" class="btn" (click)="runLoadTestAPI()">Submit</button></div>
             </div>  
         </div>
+        <div class="row" *ngIf="isLoading">
+            <div class="col">
+                <div class="row">
+                    <button class="export btn btn-primary" type="button" disabled>
+                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                            Loading...
+                    </button>
+                </div>
+            </div>
+            
+        </div>
         <div class="row"> 
             <div class="col">
                 <div class="row"><ngx-json-viewer class="form-control"  [json]="data" [expanded]="false" [depth]="4" placeholder="Test API Response"></ngx-json-viewer></div>
@@ -43,7 +54,7 @@
         </div>
     </form>
 </div>
-  
+
   
   
   

@@ -42,7 +42,10 @@ label {
     color: white;
 }
 
-
+.export {
+    background-color: rgb(19, 21, 155);
+    color: white;
+}
 
 ngx-json-viewer.form-control {
     width: 100%;
@@ -55,4 +58,11 @@ ngx-json-viewer.form-control {
     padding: 10px;
     background-color: #f8f9fa;
     box-sizing: border-box;
+  }
+
+  mat-spinner {
+    display:block;
+    margin: 5px ;
+    
+
   }

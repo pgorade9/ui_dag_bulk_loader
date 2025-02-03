@@ -16,6 +16,7 @@ export class LoadtestReportComponent {
   data:any;
   parsedJson:any[]=[];
 
+  constructor(private loadTestService:LoadtestApiService){}
   getExcelData() {
     this.loadTestService.downloadTest(this.test_id).subscribe((blob: Blob) => {
       const a = document.createElement('a');
@@ -29,24 +30,8 @@ export class LoadtestReportComponent {
 
   getTestReport() {
     this.loadTestService.getLoadTestReport(this.test_id).subscribe(response => {
+      this.data=response;
       console.log("Test Report Response:", response);
     });
   }
-  
-
-  constructor(private loadTestService:LoadtestApiService){}
-    ngOnInit(): void {
-      this.loadTestService.dataSubject3.subscribe(e=>{
-        this.parsedJson = e; 
-        console.log(this.parsedJson);
-        this.data = this.isValidJson(this.parsedJson) ? this.parsedJson : {};
-      });
-        this.loadTestService.dataSubject3.next(null);
-      
-    }
-  
-    isValidJson(json: any): boolean {
-      return json && typeof json === 'object' && !Array.isArray(json);
-    }
-    
 }
