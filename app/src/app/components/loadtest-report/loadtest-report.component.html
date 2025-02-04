@@ -16,6 +16,17 @@
                 <div class="row"><button type="submit" class="export btn" (click)="getExcelData()">Export</button></div>
             </div>
         </div>
+        <div class="row" *ngIf="isLoading">
+            <div class="col">
+                <div class="row">
+                    <button class="export btn btn-primary" type="button" disabled>
+                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                            Fetching Data...
+                    </button>
+                </div>
+            </div>
+            
+        </div>
         <div class="row">  
             <div class="col">
                 <div class="row"><ngx-json-viewer class="form-control"  [json]="data" [expanded]="false" [depth]="4"></ngx-json-viewer></div>

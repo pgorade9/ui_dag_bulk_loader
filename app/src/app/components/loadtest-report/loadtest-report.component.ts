@@ -15,6 +15,7 @@ export class LoadtestReportComponent {
   test_id:any;
   data:any;
   parsedJson:any[]=[];
+  isLoading = false;
 
   constructor(private loadTestService:LoadtestApiService){}
   getExcelData() {
@@ -29,9 +30,13 @@ export class LoadtestReportComponent {
   }
 
   getTestReport() {
+    this.isLoading = true;
     this.loadTestService.getLoadTestReport(this.test_id).subscribe(response => {
       this.data=response;
       console.log("Test Report Response:", response);
+      if (this.data !== null && this.data !== undefined) {
+        this.isLoading = false;
+      }
     });
   }
 }
