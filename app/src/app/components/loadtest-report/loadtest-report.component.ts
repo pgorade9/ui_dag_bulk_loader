@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { LoadtestApiService } from '../../services/loadtest-api.service';
 import { FormsModule } from '@angular/forms';
 import { NgxJsonViewerModule } from 'ngx-json-viewer';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-loadtest-report',
   standalone: true,
-  imports: [FormsModule,NgxJsonViewerModule],
+  imports: [CommonModule, FormsModule,NgxJsonViewerModule],
   templateUrl: './loadtest-report.component.html',
   styleUrl: '../../app.component.css'
 })
