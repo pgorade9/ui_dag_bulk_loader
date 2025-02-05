@@ -2,7 +2,7 @@
 .display-3 {
     text-align: left;
     font-family :Georgia, 'Times New Roman', Times, serif;
-    color: rgb(255, 255, 255);
+    color: rgb(219, 103, 103);
     text-shadow: 0 0 3px #ecc826, 5px 0 10px #a1ca40;
     
     }
@@ -10,8 +10,8 @@
 .sub-titles {
     text-align: left;
     font-family :Impact, Haettenschweiler, 'Arial Bold', sans-serif;
-    color: rgb(236, 222, 222);
-    text-shadow: 0 0 1px #ecc826, 5px 0 10px #a1ca40;
+    color: rgb(80, 114, 199);
+    text-shadow: 0 0 1px #92c8ca, 5px 0 10px #92c8ca;
 }
 
 label {
@@ -23,9 +23,9 @@ label {
 .element {
     margin-top: 25px;
     padding: 5px;
-    box-shadow: 5px 5px 5px 5px rgb(41, 36, 36);
+    box-shadow: 5px 5px 5px 5px rgb(176, 185, 149);
     margin-bottom: 25px;
-    background: rgb(134, 127, 56);
+    background: rgb(158, 216, 223);
 }
 
 .output-element {
@@ -38,12 +38,12 @@ label {
 }
 
 .btn {
-    background-color: rgb(233, 154, 51);
+    background-color: rgb(51, 60, 233);
     color: white;
 }
 
 .export {
-    background-color: rgb(19, 21, 155);
+    background-color: rgb(30, 155, 19);
     color: white;
 }
 
