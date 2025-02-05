@@ -9,17 +9,17 @@
             
             <div class="col-4">
                 <div class="row"><label class="form-label">Fetch Test Details</label></div>
-                <div class="row"><button type="submit" class="btn" (click)="getTestReport()">Submit</button></div>
+                <div class="row"><button type="submit" class="btn btn-primary" (click)="getTestReport()">Submit</button></div>
             </div>
             <div class="col-4">
                 <div class="row"><label class="form-label">Download Test Report</label></div>
-                <div class="row"><button type="submit" class="export btn" (click)="getExcelData()">Export</button></div>
+                <div class="row"><button type="submit" class="btn btn-success" (click)="getExcelData()">Export</button></div>
             </div>
         </div>
         <div class="row" *ngIf="isLoading">
             <div class="col">
                 <div class="row">
-                    <button class="export btn btn-primary" type="button" disabled>
+                    <button class="btn btn-primary" type="button" disabled>
                     <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
                             Fetching Data...
                     </button>

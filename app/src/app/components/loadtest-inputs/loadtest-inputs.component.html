@@ -33,13 +33,13 @@
             </div>
             <div class="col-3">
                 <div class="row"><label class="form-label">Trigger</label></div>
-                <div class="row"><button type="submit" class="btn" (click)="runLoadTestAPI()">Submit</button></div>
+                <div class="row"><button type="submit" class="btn btn-primary" (click)="runLoadTestAPI()">Submit</button></div>
             </div>  
         </div>
         <div class="row" *ngIf="isLoading">
             <div class="col">
                 <div class="row">
-                    <button class="export btn btn-primary" type="button" disabled>
+                    <button class="btn btn-success" type="button" disabled>
                     <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
                             Triggerring Workflows...
                     </button>

@@ -1,9 +1,9 @@
 
 .display-3 {
     text-align: left;
-    font-family :Georgia, 'Times New Roman', Times, serif;
-    color: rgb(219, 103, 103);
-    text-shadow: 0 0 3px #ecc826, 5px 0 10px #a1ca40;
+    font-family :Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(37, 131, 218);
+    text-shadow: 10px 3px 6px #edf1f2, 0 5px 5px #f8fafa;
     
     }
 
@@ -11,7 +11,7 @@
     text-align: left;
     font-family :Impact, Haettenschweiler, 'Arial Bold', sans-serif;
     color: rgb(80, 114, 199);
-    text-shadow: 0 0 1px #92c8ca, 5px 0 10px #92c8ca;
+    text-shadow: 0 0 1px #92c8ca, 2px 0 5px #638586;
 }
 
 label {
@@ -37,15 +37,6 @@ label {
     padding: 5px;
 }
 
-.btn {
-    background-color: rgb(51, 60, 233);
-    color: white;
-}
-
-.export {
-    background-color: rgb(30, 155, 19);
-    color: white;
-}
 
 ngx-json-viewer.form-control {
     width: 100%;
