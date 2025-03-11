@@ -2,16 +2,16 @@
 .display-3 {
     text-align: left;
     font-family :Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: rgb(231, 151, 30);
-    text-shadow: 10px 3px 6px #edf1f2, 0 5px 5px #f8fafa;
+    color: rgb(255, 255, 255);
+    /* text-shadow: 10px 3px 6px #edf1f2, 0 5px 5px #f8fafa; */
     
     }
 
 .sub-titles {
     text-align: left;
     font-family :Impact, Haettenschweiler, 'Arial Bold', sans-serif;
-    color: rgb(231, 151, 30);
-    text-shadow: 10px 3px 6px #edf1f2, 0 5px 5px #f8fafa;
+    color: rgb(255, 255, 255);
+    /* text-shadow: 10px 3px 6px #edf1f2, 0 5px 5px #f8fafa; */
 }
 
 label {
