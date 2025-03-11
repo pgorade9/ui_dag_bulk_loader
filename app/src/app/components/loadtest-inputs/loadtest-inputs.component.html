@@ -9,6 +9,7 @@
                     <select class="form-select" [(ngModel)] ="env" name="env" aria-label="Environment">
                         <option value="evd-ltops">EVD</option>
                         <option value="evt-ltops">EVT</option>
+                        <option value="mde-large-ltops">EVT-mPDF</option>
                         <option value="prod-canary-ltops">Prod-Canary</option>
                         <option value="prod-aws-ltops">Prod-AWS</option>
                         <option value="prod-qanoc-ltops">Prod-QANOC</option>
@@ -39,7 +40,7 @@
         <div class="row" *ngIf="isLoading">
             <div class="col">
                 <div class="row">
-                    <button class="btn btn-success" type="button" disabled>
+                    <button class="btn btn-secondary" type="button" disabled>
                     <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
                             Triggerring Workflows...
                     </button>
