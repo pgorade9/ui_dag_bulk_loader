@@ -2,7 +2,7 @@
 .display-3 {
     text-align: left;
     font-family :Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: rgb(37, 131, 218);
+    color: rgb(231, 151, 30);
     text-shadow: 10px 3px 6px #edf1f2, 0 5px 5px #f8fafa;
     
     }
@@ -10,8 +10,8 @@
 .sub-titles {
     text-align: left;
     font-family :Impact, Haettenschweiler, 'Arial Bold', sans-serif;
-    color: rgb(80, 114, 199);
-    text-shadow: 0 0 1px #92c8ca, 2px 0 5px #638586;
+    color: rgb(231, 151, 30);
+    text-shadow: 10px 3px 6px #edf1f2, 0 5px 5px #f8fafa;
 }
 
 label {
@@ -23,9 +23,9 @@ label {
 .element {
     margin-top: 25px;
     padding: 5px;
-    box-shadow: 5px 5px 5px 5px rgb(176, 185, 149);
+    box-shadow: 5px 5px 5px 5px rgb(66, 66, 65);
     margin-bottom: 25px;
-    background: rgb(158, 216, 223);
+    background: rgb(219, 177, 125);
 }
 
 .output-element {
